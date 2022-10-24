@@ -19,7 +19,7 @@ const Navbar = () => {
             <Image src="/../public/assets/svg/ccchaos-gradient-squared.png" alt="/" width="50" height="50" className="rounded-full hover:rotate-180 transition-all duration-1000" />
             {/* <Image src="/../public/assets/svg/sssquiggly.png" alt="/" width="50" height="50"  /> */}
             <div>
-                <ul className="hidden md:flex items-center" >
+                <ul className="hidden md:flex items-center text-neutral-900" >
                     <Link href='/' target="_blank">
                         <li className="ml-10 text-sm uppercase" >Home</li>
                     </Link>
@@ -47,7 +47,7 @@ const Navbar = () => {
             <div 
                 className={ 
                     nav 
-                    ? 'md:hidden fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen backdrop-blur-lg bg-neutral-50 p-10 transition-all duration-500' 
+                    ? 'md:hidden fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen  bg-neutral-50 p-10 transition-all duration-500' 
                     : 'fixed left-[-100%] top-0 p-10 transition-all duration-500 '
                 } 
             >

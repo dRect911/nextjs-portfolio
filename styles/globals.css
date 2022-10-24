@@ -14,7 +14,7 @@ font-family: 'IBM Plex Sans', sans-serif;
 
   body {
     @apply bg-neutral-50 bg-cover bg-fixed text-neutral-900;
-    background-image: url('../public/assets/svg/ccchaos.png');
+    background-image: url('../public/assets/svg/ccchaos-gradient.png');
     font-family: 'IBM Plex Sans', sans-serif;
 
   }
