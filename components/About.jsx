@@ -1,9 +1,6 @@
+/* eslint-disable @next/next/no-img-element */
 import React from 'react'
 import Image from 'next/image'
-import * as THREE from 'three'
-
-const scene = new THREE.Scene();
-
 
 
 
@@ -22,11 +19,11 @@ const About = () => {
 
             </div>
 
-            <div className="invisible md:visible md:col-span-1 h-full flex justify-center items-center rounded-2xl border ml-2 border-neutral-600 shadow-md bg-neutral-50/25 backdrop-blur-sm" >
-                {/* three.js canvas */}
-                <canvas id="bg" className="w-full h-full" ></canvas>
-
-            {/* <Image src="/../public/assets/svg/nnneon.png" alt="/" width="300" height="300" className="" /> */}
+            {/* neon circle image */}
+            <div className="invisible md:visible md:col-span-1 h-full flex justify-center items-center rounded-2xl  ml-2 " >
+                <div className="backdrop-blur-sm rounded-full border border-neutral-600" >
+                    <Image src="/../public/assets/svg/nnneon.png" alt="/" width="300" height="300" className="animate-spin" />
+                </div>
             </div>
 
         </div>

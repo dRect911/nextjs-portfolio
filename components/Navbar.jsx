@@ -16,7 +16,7 @@ const Navbar = () => {
 
         {/* top nav */}
         <div className="flex justify-between items-center w-full h-full px-8 " >
-            <Image src="/../public/assets/svg/ccchaos-gradient-squared.png" alt="/" width="50" height="50" className="rounded-full hover:rotate-180 transition-all duration-1000" />
+            <Image src="/../public/assets/svg/ccchaos-squared.png" alt="/" width="50" height="50" className="rounded-full hover:rotate-180 transition-all duration-1000" />
             {/* <Image src="/../public/assets/svg/sssquiggly.png" alt="/" width="50" height="50"  /> */}
             <div>
                 <ul className="hidden md:flex items-center text-neutral-900" >

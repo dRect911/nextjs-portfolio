@@ -14,7 +14,7 @@ const Main = () => {
                 Hi, I'm <span className="bg-clip-text group-hover:text-transparent bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 transition-all duration-500" >Kenneth</span>
             </h1>
             <h1 className="py-2 text-neutral-700" >
-                Front-End Developer
+                Jr. Front-End Developer
             </h1>
             <p className="py-4 w-[80%] text-neutral-600 m-auto " >
                 I'm a front-end web developer specializing in building exceptional digital experiences. Currently i'm focused on building responsive front-end web applications while learning back-end technologies.

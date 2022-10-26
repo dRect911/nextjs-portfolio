@@ -35,6 +35,11 @@ font-family: 'IBM Plex Sans', sans-serif;
     @apply cursor-pointer
   }
 
+  .mern-stack-memories{
+    @apply bg-cover;
+    background-image: url('../public/assets/projects/memories-dummy-screen.png');
+  }
+
 }
 
 
