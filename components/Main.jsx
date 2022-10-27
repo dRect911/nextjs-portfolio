@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from 'react'
 import { Email } from '@carbon/icons-react'
 import { FaGithub, FaLinkedinIn, FaDiscord } from 'react-icons/fa'
