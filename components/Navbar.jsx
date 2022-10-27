@@ -12,14 +12,14 @@ const Navbar = () => {
     }
 
   return (
-    <div className="fixed w-full z-[100]  h-20  border-b border-neutral-500 backdrop-blur-lg bg-neutral-50/25">
+    <div className="fixed w-full z-[100]  h-20  border-b border-neutral-500 backdrop-blur-lg bg-neutral-50/25 dark:bg-neutral-900/25">
 
         {/* top nav */}
         <div className="flex justify-between items-center w-full h-full px-8 " >
             <Image src="/../public/assets/svg/ccchaos-squared.png" alt="/" width="50" height="50" className="rounded-full hover:rotate-180 transition-all duration-1000" />
             {/* <Image src="/../public/assets/svg/sssquiggly.png" alt="/" width="50" height="50"  /> */}
             <div>
-                <ul className="hidden md:flex items-center text-neutral-900" >
+                <ul className="hidden md:flex items-center text-neutral-900 dark:text-neutral-400" >
                     <Link href='/' target="_blank">
                         <li className="ml-10 text-sm uppercase" >Home</li>
                     </Link>
@@ -36,7 +36,7 @@ const Navbar = () => {
                         <li className="ml-10 text-sm uppercase" >Contact</li>
                     </Link>
                 </ul>
-                <div onClick={handleNav} className='md:hidden cursor-pointer' >
+                <div onClick={handleNav} className='md:hidden cursor-pointer dark:text-neutral-400' >
                     <Menu size={24} />
                 </div>
             </div>
@@ -47,7 +47,7 @@ const Navbar = () => {
             <div 
                 className={ 
                     nav 
-                    ? 'md:hidden fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen  bg-neutral-50 p-10 transition-all duration-500' 
+                    ? 'md:hidden fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen  bg-neutral-50 dark:text-neutral-300 dark:bg-neutral-900 border-r border-neutral-600  p-10 transition-all duration-500' 
                     : 'fixed left-[-100%] top-0 p-10 transition-all duration-500 '
                 } 
             >
@@ -55,7 +55,7 @@ const Navbar = () => {
                 <div>
 
                     <div className="flex w-full items-center justify-between" >
-                        <Image src="/../public/assets/skills/node-js.png" alt="/" width="50" height="50" />
+                        <Image src="/../public/assets/svg/ccchaos-squared.png" alt="/" width="50" height="50" className="rounded-full hover:rotate-180 transition-all duration-1000" />
                         <div onClick={handleNav} className=" cursor-pointer hover:scale-105 hover:rotate-90 transition-all" >
                             <Close size={24} />
                         </div>
