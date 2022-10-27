@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { useState } from 'react'
 import About from '../components/About'
-import Contact from '../components/Contact'
+import ContactShort from '../components/ContactShort'
 import Main from '../components/Main'
 import Navbar from '../components/Navbar'
 import Projects from '../components/Projects'
@@ -24,6 +24,7 @@ export default function Home() {
       <About />
       <Skills />
       <Projects />
+      <ContactShort />
       
       
     </div>
