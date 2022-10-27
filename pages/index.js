@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import { useState } from 'react'
 import About from '../components/About'
 import Contact from '../components/Contact'
 import Main from '../components/Main'
@@ -8,6 +9,7 @@ import Projects from '../components/Projects'
 import Skills from '../components/Skills'
 
 export default function Home() {
+  const [dark, setDark] = useState(false)
   return (
     <div>
       <Head>
@@ -16,11 +18,13 @@ export default function Home() {
         <link rel="icon" href="/assets/svg/ccchaos-gradient-squared.png" />
       </Head>
 
-      <Navbar/>
+      
+      <Navbar dark={dark} setDark={setDark} />
       <Main/>
       <About />
       <Skills />
       <Projects />
+      
       
     </div>
   )

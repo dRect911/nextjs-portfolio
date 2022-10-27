@@ -5,11 +5,15 @@ import React, {useState} from 'react'
 import { Menu, Close, Email } from '@carbon/icons-react'
 import { FaGithub, FaLinkedinIn, FaDiscord } from 'react-icons/fa'
 
-const Navbar = () => {
+const Navbar = ( { dark, setDark } ) => {
     const [nav, setNav] = useState(false)
 
     const handleNav = () => {
         setNav(!nav)
+    }
+
+    const switchTheme = () => {
+        setDark(!dark)
     }
 
   return (
@@ -17,7 +21,14 @@ const Navbar = () => {
 
         {/* top nav */}
         <div className="flex justify-between items-center w-full h-full px-8 " >
-            <Image src="/../public/assets/svg/ccchaos-squared.png" alt="/" width="50" height="50" className="rounded-full hover:rotate-180 transition-all duration-1000" />
+            <Image 
+                src="/../public/assets/svg/ccchaos-squared.png" 
+                alt="/" 
+                width="50" 
+                height="50" 
+                className="rounded-full cursor-pointer hover:rotate-180 transition-all duration-1000" 
+                onClick={switchTheme}
+            />
             {/* <Image src="/../public/assets/svg/sssquiggly.png" alt="/" width="50" height="50"  /> */}
             <div>
                 <ul className="hidden md:flex items-center text-neutral-900 dark:text-neutral-400" >

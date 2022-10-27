@@ -5,7 +5,7 @@ import { FaGithub, FaLinkedinIn, FaDiscord } from 'react-icons/fa'
 
 const Main = () => {
   return (
-    <>
+
     <div className="w-full h-screen text-center flex justify-center items-center" >
         <div className="group w-3/4 md:w-1/2 p-8 mx-auto my-auto  rounded-2xl border border-neutral-600 shadow-md bg-neutral-50/25 dark:bg-neutral-900/25 dark backdrop-blur-sm" >
             <p className="uppercase text-[10px] md:text-sm tracking-widest text-neutral-600 dark:text-neutral-400" >
@@ -38,7 +38,12 @@ const Main = () => {
         </div>
     </div>
 
-    {/* dark section just testing stuffs */}
+    
+    
+  )
+}
+
+{/* dark section just testing stuffs */}
     {/* <div className="w-full h-screen text-center flex justify-center items-center" >
         <div className="group w-2/3 md:w-1/2 p-8 mx-auto my-auto  rounded-2xl border border-neutral-600 bg-neutral-900/25 shadow-md backdrop-blur-sm" >
             <p className="uppercase text-sm tracking-widest text-neutral-400" >
@@ -70,9 +75,6 @@ const Main = () => {
 
         </div>
     </div> */}
-    </>
-    
-  )
-}
+
 
 export default Main
