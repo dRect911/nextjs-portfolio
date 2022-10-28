@@ -18,7 +18,7 @@ html{
 
   body {
     @apply bg-neutral-50 dark:bg-neutral-900 bg-cover bg-fixed text-neutral-900;
-    background-image: url('../public/ccchaos-gradient.png');
+    /* background-image: url('../public/ccchaos-gradient.png'); */
     font-family: 'IBM Plex Sans', sans-serif;
 
   }
