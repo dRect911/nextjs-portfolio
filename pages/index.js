@@ -15,13 +15,17 @@ export default function Home() {
     <div>
       <Head>
         <title>Kenneth | Web Developer</title>
-        <meta name="description" content="I'm a web developer specializing in building exceptional digital experiences. " />
         {/* Open Graph properties */}
+        <meta property="og:site_name" content="Kenneth PRINCE AGBODJAN" />
         <meta property="og:title" content="Kenneth | Web Developer" />
+        <meta name="description" content="I'm a web developer specializing in building exceptional digital experiences. " />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="http://nextjs-portfolio-drect911.vercel.app/" />
         <meta property="og:image" content="https://ibb.co/D8BQd2g" />
-        <meta property="og:site_name" content="Kenneth PRINCE AGBODJAN" />
+        <meta property="og:image:secure_url" content="https://ibb.co/D8BQd2g" />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:width" content="1000" />
+        <meta property="og:image:height" content="1000" />
         <link rel="icon" href="/assets/svg/ccchaos-gradient-squared.png" />
       </Head>
 
