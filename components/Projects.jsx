@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Launch } from '@carbon/icons-react'
 import { FaGithub } from 'react-icons/fa'
+import circle from "../public/assets/svg/nnneon.png"
 
 const Projects = () => {
   return (
@@ -23,7 +24,7 @@ const Projects = () => {
             {/* neon circle image */}
             <div className="hidden lg:col-span-1 h-full lg:flex justify-center items-center rounded-2xl  ml-2 " >
                 <div className="backdrop-blur-sm rounded-full border border-neutral-600" >
-                    <Image src="/../public/assets/svg/nnneon.png" alt="/" width="300" height="300" className="animate-spin" />
+                    <Image src={circle} alt="/" width="300" height="300" className="animate-spin" />
                 </div>
             </div>
 

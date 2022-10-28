@@ -1,10 +1,26 @@
 import React from 'react'
 import Image from 'next/image'
 
-const newLocal = "/../public/assets/skills/js.png"
-const newLocal_1 = "/../public/assets/skills/java.png"
-import newLocal_2 from "../public/assets/skills/c-sharp.png"
-const newLocal_3 = "../public/assets/skills/python.png"
+
+//images imports
+import circle from "../public/assets/svg/nnneon.png"
+import js from "../public/assets/skills/js.png"
+import java from "../public/assets/skills/java.png"
+import csharp from "../public/assets/skills/c-sharp.png"
+import python from "../public/assets/skills/python.png"
+import react from "../public/assets/skills/react-js.png"
+import redux from "../public/assets/skills/redux-nameles.png"
+import next from "../public/assets/skills/next-js.png"
+import tailwind from "../public/assets/skills/tailwind-css.png"
+import dotnet from "../public/assets/skills/dotnet-core.png"
+import express from "../public/assets/skills/express-js.png"
+import flask from "../public/assets/skills/flask.png"
+import mongodb from "../public/assets/skills/mongodb-icon.png"
+import node from "../public/assets/skills/node-js.png"
+import postgre from "../public/assets/skills/postgres-nameless.png"
+import sqlserver from "../public/assets/skills/sql-server.png"
+
+
 const Skills = () => {
   return (
     <div id="skills" className="w-full pb-32 p-2 py-6 " >
@@ -12,7 +28,7 @@ const Skills = () => {
 
             <div className="invisible lg:visible lg:col-span-1 md:h-full flex justify-center items-center rounded-2xl  ml-2 " >
                 <div className="backdrop-blur-sm rounded-full border border-neutral-600" >
-                    <Image src="/../public/assets/svg/nnneon.png" alt="/" width="300" height="300" className="animate-spin" />
+                    <Image src={circle} alt="/" width="300" height="300" className="animate-spin" />
                 </div>
             </div>
 
@@ -36,25 +52,25 @@ const Skills = () => {
                 <div className="md:w-[20%] h-[25vh] p-6 flex flex-col jusitfy-center items-center m-4 border border-neutral-600 shadow-md bg-neutral-50/50 dark:bg-neutral-900/50 backdrop-blur-sm rounded-2xl " >
                     <p className="text-2xl md:text-3xl lg:text-4xl font-medium py-2 dark:text-neutral-300" >Javascript</p>
                     <div className=" flex justify-center  " >
-                        <Image src={newLocal} alt="/" width={100} height={100} className="" />
+                        <Image src={js} alt="/" width={100} height={100} className="" />
                     </div>
                 </div>
                 <div className="md:w-[20%] h-[25vh] p-6 flex flex-col jusitfy-center items-center m-4 border border-neutral-600 shadow-md bg-neutral-50/50 dark:bg-neutral-900/50 backdrop-blur-sm rounded-2xl " >
                     <p className="text-2xl md:text-3xl lg:text-4xl font-medium py-2 dark:text-neutral-300" >Java</p>
                     <div className=" flex justify-center  " >
-                        <Image src={newLocal_1} alt="/" width={100} height={100} className="" />
+                        <Image src={java} alt="/" width={100} height={100} className="" />
                     </div>
                 </div>
                 <div className="md:w-[20%] h-[25vh] p-6 flex flex-col jusitfy-center items-center m-4 border border-neutral-600 shadow-md bg-neutral-50/50 dark:bg-neutral-900/50 backdrop-blur-sm rounded-2xl " >
                     <p className="text-2xl md:text-3xl lg:text-4xl font-medium py-2 dark:text-neutral-300" >C#</p>
                     <div className=" flex justify-center  " >
-                        <Image src={newLocal_2} alt="/" width={100} height={100} className="" />
+                        <Image src={csharp} alt="/" width={100} height={100} className="" />
                     </div>
                 </div>
                 <div className="md:w-[20%] h-[25vh] p-6 flex flex-col jusitfy-center items-center m-4 border border-neutral-600 shadow-md bg-neutral-50/50 dark:bg-neutral-900/50 backdrop-blur-sm rounded-2xl " >
                     <p className="text-2xl md:text-3xl lg:text-4xl font-medium py-2 dark:text-neutral-300" >Python</p>
                     <div className=" flex justify-center  " >
-                        <Image src={newLocal_3} alt="/" width={100} height={100} className="" />
+                        <Image src={python} alt="/" width={100} height={100} className="" />
                     </div>
                 </div>
 
@@ -69,25 +85,25 @@ const Skills = () => {
                 <div className="md:w-[20%] h-[25vh] p-6 flex flex-col jusitfy-center items-center m-4 border border-neutral-600 shadow-md bg-neutral-50/50 dark:bg-neutral-900/50 backdrop-blur-sm rounded-2xl " >
                     <p className="text-2xl md:text-3xl  lg:text-4xl font-medium py-2 dark:text-neutral-300" >React</p>
                     <div className=" flex justify-center  " >
-                        <Image src="/../public/assets/skills/react-js.png" alt="/" width={100} height={100} className="" />
+                        <Image src={react} alt="/" width={100} height={100} className="" />
                     </div>
                 </div>
                 <div className="md:w-[20%] h-[25vh] p-6 flex flex-col jusitfy-center items-center m-4 border border-neutral-600 shadow-md bg-neutral-50/50 dark:bg-neutral-900/50 backdrop-blur-sm rounded-2xl " >
                     <p className="text-2xl md:text-3xl  lg:text-4xl font-medium py-2 dark:text-neutral-300" >Redux</p>
                     <div className=" flex justify-center  " >
-                        <Image src="/../public/assets/skills/redux-nameles.png" alt="/" width={100} height={100} className="" />
+                        <Image src={redux} alt="/" width={100} height={100} className="" />
                     </div>
                 </div>
                 <div className="md:w-[20%] h-[25vh] p-6 flex flex-col jusitfy-center items-center m-4 border border-neutral-600 shadow-md bg-neutral-50/50 dark:bg-neutral-900/50 backdrop-blur-sm rounded-2xl " >
                     <p className="text-2xl md:text-3xl  lg:text-4xl font-medium py-2 dark:text-neutral-300" >Next</p>
                     <div className=" flex justify-center  " >
-                        <Image src="/../public/assets/skills/next-js.png" alt="/" width={100} height={100} className="" />
+                        <Image src={next} alt="/" width={100} height={100} className="" />
                     </div>
                 </div>
                 <div className="md:w-[20%] h-[25vh] p-6 flex flex-col jusitfy-center items-center m-4 border border-neutral-600 shadow-md bg-neutral-50/50 dark:bg-neutral-900/50 backdrop-blur-sm rounded-2xl " >
                     <p className="text-2xl md:text-3xl  lg:text-3xl font-medium py-2 dark:text-neutral-300" >Tailwind CSS</p>
                     <div className=" flex justify-center pt-6  " >
-                        <Image src="/../public/assets/skills/tailwind-css.png" alt="/" width={100} height={60} className="" />
+                        <Image src={tailwind} alt="/" width={100} height={60} className="" />
                     </div>
                 </div>
             </div>
@@ -101,25 +117,25 @@ const Skills = () => {
                 <div className="md:w-[20%] h-[25vh] p-6 flex flex-col jusitfy-center items-center m-4 border border-neutral-600 shadow-md bg-neutral-50/50 dark:bg-neutral-900/50 backdrop-blur-sm rounded-2xl " >
                     <p className="text-2xl md:text-3xl lg:text-4xl font-medium py-2 dark:text-neutral-300" >NodeJS</p>
                     <div className=" flex justify-center  " >
-                        <Image src="/../public/assets/skills/node-js.png" alt="/" width={100} height={100} className="" />
+                        <Image src={node} alt="/" width={100} height={100} className="" />
                     </div>
                 </div>
                 <div className="md:w-[20%] h-[25vh] p-6 flex flex-col jusitfy-center items-center m-4 border border-neutral-600 shadow-md bg-neutral-50/50 dark:bg-neutral-900/50 backdrop-blur-sm rounded-2xl " >
                     <p className="text-2xl md:text-3xl lg:text-4xl font-medium py-2 dark:text-neutral-300" >Express</p>
                     <div className=" flex justify-center  " >
-                        <Image src="/../public/assets/skills/express-js.png" alt="/" width={100} height={100} className="" />
+                        <Image src={express} alt="/" width={100} height={100} className="" />
                     </div>
                 </div>
                 <div className="md:w-[20%] h-[25vh] p-6 flex flex-col jusitfy-center items-center m-4 border border-neutral-600 shadow-md bg-neutral-50/50 dark:bg-neutral-900/50 backdrop-blur-sm rounded-2xl " >
                     <p className="text-2xl md:text-3xl lg:text-4xl font-medium py-2 dark:text-neutral-300" >Flask</p>
                     <div className=" flex justify-center  " >
-                        <Image src="/../public/assets/skills/flask.png" alt="/" width={100} height={100} className="" />
+                        <Image src={flask} alt="/" width={100} height={100} className="" />
                     </div>
                 </div>
                 <div className="md:w-[20%] h-[25vh] p-6 flex flex-col jusitfy-center items-center m-4 border border-neutral-600 shadow-md bg-neutral-50/50 dark:bg-neutral-900/50 backdrop-blur-sm rounded-2xl " >
                     <p className="text-2xl md:text-3xl font-medium py-2 dark:text-neutral-300" >ASP.NET Core</p>
                     <div className=" flex justify-center  " >
-                        <Image src="/../public/assets/skills/dotnet-core.png" alt="/" width={100} height={100} className="" />
+                        <Image src={dotnet} alt="/" width={100} height={100} className="" />
                     </div>
                 </div>
 
@@ -134,19 +150,19 @@ const Skills = () => {
                 <div className="md:w-[20%] h-[25vh] p-6 flex flex-col jusitfy-center items-center m-4 border border-neutral-600 shadow-md bg-neutral-50/50 dark:bg-neutral-900/50 backdrop-blur-sm rounded-2xl " >
                     <p className="text-2xl md:text-3xl lg:text-4xl font-medium py-2 dark:text-neutral-300" >MongoDB</p>
                     <div className=" flex justify-center pt-2 " >
-                        <Image src="/../public/assets/skills/mongodb-icon.png" alt="/" width={45} height={100} className="" />
+                        <Image src={mongodb} alt="/" width={45} height={100} className="" />
                     </div>
                 </div>
                 <div className="md:w-[20%] h-[25vh] p-6 flex flex-col jusitfy-center items-center m-4 border border-neutral-600 shadow-md bg-neutral-50/50 dark:bg-neutral-900/50 backdrop-blur-sm rounded-2xl " >
                     <p className="text-2xl md:text-3xl lg:text-4xl font-medium py-2 dark:text-neutral-300" >PostgreSQL</p>
                     <div className=" flex justify-center pt-2 " >
-                        <Image src="/../public/assets/skills/postgres-nameless.png" alt="/" width={100} height={100} className="" />
+                        <Image src={postgre} alt="/" width={100} height={100} className="" />
                     </div>
                 </div>
                 <div className="md:w-[20%] h-[25vh] p-6 flex flex-col jusitfy-center items-center m-4 border border-neutral-600 shadow-md bg-neutral-50/50 dark:bg-neutral-900/50 backdrop-blur-sm rounded-2xl " >
                     <p className="text-2xl md:text-2xl font-medium py-2 dark:text-neutral-300" >MS SQL Server</p>
                     <div className=" flex justify-center pt-4 " >
-                        <Image src="/../public/assets/skills/sql-server.png" alt="/" width={100} height={100} className="" />
+                        <Image src={sqlserver} alt="/" width={100} height={100} className="" />
                     </div>
                 </div>
             </div>

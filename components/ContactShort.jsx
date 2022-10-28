@@ -6,15 +6,14 @@ import { Email } from '@carbon/icons-react'
 import { FaGithub, FaLinkedinIn, FaDiscord, FaDev, FaTwitter } from 'react-icons/fa'
 import { SiLeetcode, SiCodersrank } from 'react-icons/si'
 
-// https://dev.to/drect911
-// https://twitter.com/thiisnoob
+import ccchaos from "../public/assets/svg/ccchaos-squared-1k.png"
 
 const ContactShort = () => {
   return (
     <div id="contact" className="w-full lg:h-screen pt-12 lg:pt-24 mb-8" >
         <div className="md:flex w-[90%] md:w-[85%] lg:w-[75%] h-auto mx-auto  p-4 md:p-6 rounded-2xl border border-neutral-600 shadow-md bg-neutral-50/25 dark:bg-neutral-900/25 backdrop-blur-sm transition-all">
             <div className="" >
-                <Image src="/../public/assets/svg/ccchaos-squared-1k.png" width={1000} height={1000} alt="/" className="" />
+                <Image src={ccchaos} width={1000} height={1000} alt="/" className="" />
             </div>
             <div className="w-full md:pl-6">
                 <p className="tracking-widest mt-2 md:mb-2 md:mt-0  dark:text-neutral-400" >CONTACT .</p>

@@ -5,6 +5,7 @@ import React, {useState} from 'react'
 import { Menu, Close } from '@carbon/icons-react'
 import { FaGithub, FaLinkedinIn, FaDev } from 'react-icons/fa'
 import { SiLeetcode } from 'react-icons/si'
+import ccchaos from "../public/assets/svg/ccchaos-squared.png"
 
 const Navbar = ( { dark, setDark } ) => {
     const [nav, setNav] = useState(false)
@@ -23,7 +24,7 @@ const Navbar = ( { dark, setDark } ) => {
         {/* top nav */}
         <div className="flex justify-between items-center w-full h-full px-8 " >
             <Image 
-                src="/../public/assets/svg/ccchaos-squared.png" 
+                src={ccchaos} 
                 alt="/" 
                 width="50" 
                 height="50" 
@@ -68,7 +69,7 @@ const Navbar = ( { dark, setDark } ) => {
                 <div>
 
                     <div className="flex w-full items-center justify-between" >
-                        <Image src="/../public/assets/svg/ccchaos-squared.png" alt="/" width="50" height="50" className="rounded-full hover:rotate-180 transition-all duration-1000" />
+                        <Image src={ccchaos} alt="/" width="50" height="50" className="rounded-full hover:rotate-180 transition-all duration-1000" />
                         <div onClick={handleNav} className=" cursor-pointer hover:scale-105 hover:rotate-90 transition-all" >
                             <Close size={24} />
                         </div>
