@@ -1,11 +1,13 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 import { Launch } from '@carbon/icons-react'
+import { FaGithub } from 'react-icons/fa'
 
 const Projects = () => {
   return (
-    <div className="w-full pb-32 p-2 py-6 " >
+    <div id="projects" className="w-full pb-32 p-2 py-6 lg:pt-24 " >
         <div className="w-[90%] mx-auto h-1/2 md:grid grid-cols-3  " >
 
             <div className="col-span-3 md:col-span-2 h-full flex flex-col justify-center  md:py-8 md:pr-12   md:mr-2 " >
@@ -13,7 +15,7 @@ const Projects = () => {
                     <p className="tracking-widest mb-2 dark:text-neutral-400" >PROJECTS .</p>
                     <h1 className="dark:text-neutral-200">What I've Built</h1>
                     <p className="py-4 text-lg dark:text-neutral-300" >
-                        A look at the projects i worked on
+                        A look at the projects I worked on.
                     </p>
                 </div>
             </div>
@@ -39,8 +41,13 @@ const Projects = () => {
 
                     {/* img overlay */}
                     <div className="h-[280px] group absolute top-0 left-0 w-full px-4 pt-4 rounded-t-2xl flex justify-center border-b border-neutral-600 hover:backdrop-blur-sm hover:bg-neutral-50/50 dark:hover:bg-neutral-900/50 transition-all ">
-                        <div className="flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all " >
-                            <Launch size={32} className="cursor-pointer dark:text-neutral-200" onClick={() => navigate("http://mern-stack-memories.vercel.app/")} />
+                        <div className="w-full  flex items-center justify-around opacity-0 group-hover:opacity-100 transition-all " >
+                            <Link href='http://mern-stack-memories.vercel.app/' target="_blank">
+                                <Launch size={32} className="cursor-pointer dark:text-neutral-200" />
+                            </Link>
+                            <Link href='https://github.com/dRect911/mern-stack-memories' target="_blank">
+                                <FaGithub size={24} className="dark:text-neutral-200 cursor-pointer" />
+                            </Link>
                             {/* <h5 className="text-white" >{moment(post.createdAt).fromNow()}</h5> */}
                         </div>
                         {/* go-to icon here */}

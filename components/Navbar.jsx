@@ -2,8 +2,9 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React, {useState} from 'react'
-import { Menu, Close, Email } from '@carbon/icons-react'
-import { FaGithub, FaLinkedinIn, FaDiscord } from 'react-icons/fa'
+import { Menu, Close } from '@carbon/icons-react'
+import { FaGithub, FaLinkedinIn, FaDev } from 'react-icons/fa'
+import { SiLeetcode } from 'react-icons/si'
 
 const Navbar = ( { dark, setDark } ) => {
     const [nav, setNav] = useState(false)
@@ -26,25 +27,25 @@ const Navbar = ( { dark, setDark } ) => {
                 alt="/" 
                 width="50" 
                 height="50" 
-                className="rounded-full cursor-pointer hover:rotate-180 transition-all duration-1000" 
+                className="rounded-full hover:rotate-180 transition-all duration-1000" 
                 onClick={switchTheme}
             />
             {/* <Image src="/../public/assets/svg/sssquiggly.png" alt="/" width="50" height="50"  /> */}
             <div>
                 <ul className="hidden md:flex items-center text-neutral-900 dark:text-neutral-400" >
-                    <Link href='/' target="_blank">
+                    <Link href='/#main' target="_blank" scroll={false}>
                         <li className="ml-10 text-sm uppercase" >Home</li>
                     </Link>
-                    <Link href='/' target="_blank">
+                    <Link href='/#about' target="_blank" scroll={false}>
                         <li className="ml-10 text-sm uppercase" >About</li>
                     </Link>
-                    <Link href='/' target="_blank">
+                    <Link href='/#skills' target="_blank" scroll={false}>
                         <li className="ml-10 text-sm uppercase" >Skills</li>
                     </Link>
-                    <Link href='/' target="_blank">
+                    <Link href='/#projects' target="_blank" scroll={false}>
                         <li className="ml-10 text-sm uppercase" >Projects</li>
                     </Link>
-                    <Link href='/' target="_blank">
+                    <Link href='/#contact' target="_blank" scroll={false}>
                         <li className="ml-10 text-sm uppercase" >Contact</li>
                     </Link>
                 </ul>
@@ -55,11 +56,11 @@ const Navbar = ( { dark, setDark } ) => {
         </div>
 
         {/* side nav */}
-        <div className={ nav ? 'md:hidden fixed left-0 top-0 w-full h-screen bg-black/50 transition-all duration-500' : 'transition-all duration-500' } >
+        <div className={ nav ? 'md:hidden z-10 fixed left-0 top-0 w-full h-screen bg-black/50 transition-all duration-500' : 'transition-all duration-500' } >
             <div 
                 className={ 
                     nav 
-                    ? 'md:hidden fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen  bg-neutral-50 dark:text-neutral-300 dark:bg-neutral-900 border-r border-neutral-600  p-10 transition-all duration-500' 
+                    ? 'md:hidden z-40 fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen  bg-neutral-50 dark:text-neutral-300 dark:bg-neutral-900 border-r border-neutral-600  p-10 transition-all duration-500' 
                     : 'fixed left-[-100%] top-0 p-10 transition-all duration-500 '
                 } 
             >
@@ -74,27 +75,27 @@ const Navbar = ( { dark, setDark } ) => {
                     </div>
 
                     <div className="border-b my-4" >
-                        <p className="py-4" >Some text here</p>
+                        <p className="py-4" >Kenneth PRINCE AGBODJAN</p>
                     </div>
 
                 </div>
 
                 <div className="py-4 flex flex-col" >
                     <ul>
-                        <Link href='/' target="_blank">
-                            <li className="py-4 text-sm hover:translate-x-1 transition-all" >Home</li>
+                        <Link href='/#main' target="_blank" scroll={false} >
+                            <li className="py-4 text-sm hover:translate-x-1 transition-all" onClick={handleNav}>Home</li>
                         </Link>
-                        <Link href='/' target="_blank">
-                            <li className="py-4 text-sm hover:translate-x-1 transition-all" >About</li>
+                        <Link href='/#about' target="_blank" scroll={false} >
+                            <li className="py-4 text-sm hover:translate-x-1 transition-all" onClick={handleNav}>About</li>
                         </Link>
-                        <Link href='/' target="_blank">
-                            <li className="py-4 text-sm hover:translate-x-1 transition-all" >Skills</li>
+                        <Link href='/#skills' target="_blank" scroll={false} >
+                            <li className="py-4 text-sm hover:translate-x-1 transition-all" onClick={handleNav}>Skills</li>
                         </Link>
-                        <Link href='/' target="_blank">
-                            <li className="py-4 text-sm hover:translate-x-1 transition-all" >Projects</li>
+                        <Link href='/#projects' target="_blank" scroll={false} >
+                            <li className="py-4 text-sm hover:translate-x-1 transition-all" onClick={handleNav}>Projects</li>
                         </Link>
-                        <Link href='/' target="_blank">
-                            <li className="py-4 text-sm hover:translate-x-1 transition-all" >Contact</li>
+                        <Link href='/#contact' target="_blank" scroll={false} >
+                            <li className="py-4 text-sm hover:translate-x-1 transition-all" onClick={handleNav}>Contact</li>
                         </Link>
                     </ul>
                     <div className="pt-40" >
@@ -103,16 +104,24 @@ const Navbar = ( { dark, setDark } ) => {
                         </p>
                         <div className="flex items-center justify-between my-4 " >
                             <div>
-                                <FaLinkedinIn size={24} />
+                                <Link href="https://www.linkedin.com/in/kenneth-prince-agbodjan-40111a23b/" target="_blank" >
+                                    <FaLinkedinIn size={24} className="text-neutral-600 dark:text-neutral-200 cursor-pointer" />
+                                </Link>
                             </div>
                             <div>
-                                <FaGithub size={24} />
+                                <Link href='https://github.com/dRect911' target="_blank">
+                                    <FaGithub size={24} className="text-neutral-600 dark:text-neutral-200 cursor-pointer" />
+                                </Link>
                             </div>
                             <div>
-                                <Email size={24} />
+                                <Link href='https://dev.to/drect911' target="_blank">
+                                    <FaDev size={24} className="text-neutral-600 dark:text-neutral-200 cursor-pointer" />
+                                </Link>
                             </div>
                             <div>
-                                <FaDiscord size={24} />
+                                <Link href='https://leetcode.com/dRect911/' target="_blank">
+                                    <SiLeetcode size={24} className="text-neutral-600 dark:text-neutral-200 cursor-pointer" />
+                                </Link>
                             </div>
                         </div>
                     </div>

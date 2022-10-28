@@ -11,7 +11,7 @@ import { SiLeetcode, SiCodersrank } from 'react-icons/si'
 
 const ContactShort = () => {
   return (
-    <div id="contact" className="w-full lg:h-screen pt-12 lg:pt-24" >
+    <div id="contact" className="w-full lg:h-screen pt-12 lg:pt-24 mb-8" >
         <div className="md:flex w-[90%] md:w-[85%] lg:w-[75%] h-auto mx-auto  p-4 md:p-6 rounded-2xl border border-neutral-600 shadow-md bg-neutral-50/25 dark:bg-neutral-900/25 backdrop-blur-sm transition-all">
             <div className="" >
                 <Image src="/../public/assets/svg/ccchaos-squared-1k.png" width={1000} height={1000} alt="/" className="" />
@@ -51,7 +51,7 @@ const ContactShort = () => {
                     </div>
                     <div className="flex py-1 underline hover:no-underline" >
                         <FaDiscord size={24} className="text-neutral-600 dark:text-neutral-200 mr-2 shrink-0" />
-                        <Link href="https://discord.gg/nemo#9936" target="_blank" >nemo#9936</Link>
+                        <Link href="/#contact" target="_blank" >nemo#9936</Link>
                     </div>
                     <div className="flex py-1 underline hover:no-underline break-all" >
                         <Email size={24} className="text-neutral-600 dark:text-neutral-200 mr-2 shrink-0 " />
