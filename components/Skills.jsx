@@ -1,6 +1,10 @@
 import React from 'react'
 import Image from 'next/image'
 
+const newLocal = "/../public/assets/skills/js.png"
+const newLocal_1 = "/../public/assets/skills/java.png"
+import newLocal_2 from "../public/assets/skills/c-sharp.png"
+const newLocal_3 = "../public/assets/skills/python.png"
 const Skills = () => {
   return (
     <div id="skills" className="w-full pb-32 p-2 py-6 " >
@@ -32,25 +36,25 @@ const Skills = () => {
                 <div className="md:w-[20%] h-[25vh] p-6 flex flex-col jusitfy-center items-center m-4 border border-neutral-600 shadow-md bg-neutral-50/50 dark:bg-neutral-900/50 backdrop-blur-sm rounded-2xl " >
                     <p className="text-2xl md:text-3xl lg:text-4xl font-medium py-2 dark:text-neutral-300" >Javascript</p>
                     <div className=" flex justify-center  " >
-                        <Image src="/../public/assets/skills/js.png" alt="/" width={100} height={100} className="" />
+                        <Image src={newLocal} alt="/" width={100} height={100} className="" />
                     </div>
                 </div>
                 <div className="md:w-[20%] h-[25vh] p-6 flex flex-col jusitfy-center items-center m-4 border border-neutral-600 shadow-md bg-neutral-50/50 dark:bg-neutral-900/50 backdrop-blur-sm rounded-2xl " >
                     <p className="text-2xl md:text-3xl lg:text-4xl font-medium py-2 dark:text-neutral-300" >Java</p>
                     <div className=" flex justify-center  " >
-                        <Image src="/../public/assets/skills/java.png" alt="/" width={100} height={100} className="" />
+                        <Image src={newLocal_1} alt="/" width={100} height={100} className="" />
                     </div>
                 </div>
                 <div className="md:w-[20%] h-[25vh] p-6 flex flex-col jusitfy-center items-center m-4 border border-neutral-600 shadow-md bg-neutral-50/50 dark:bg-neutral-900/50 backdrop-blur-sm rounded-2xl " >
                     <p className="text-2xl md:text-3xl lg:text-4xl font-medium py-2 dark:text-neutral-300" >C#</p>
                     <div className=" flex justify-center  " >
-                        <Image src="/../public/assets/skills/c-sharp.png" alt="/" width={100} height={100} className="" />
+                        <Image src={newLocal_2} alt="/" width={100} height={100} className="" />
                     </div>
                 </div>
                 <div className="md:w-[20%] h-[25vh] p-6 flex flex-col jusitfy-center items-center m-4 border border-neutral-600 shadow-md bg-neutral-50/50 dark:bg-neutral-900/50 backdrop-blur-sm rounded-2xl " >
                     <p className="text-2xl md:text-3xl lg:text-4xl font-medium py-2 dark:text-neutral-300" >Python</p>
                     <div className=" flex justify-center  " >
-                        <Image src="/../public/assets/skills/python.png" alt="/" width={100} height={100} className="" />
+                        <Image src={newLocal_3} alt="/" width={100} height={100} className="" />
                     </div>
                 </div>
 
