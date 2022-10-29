@@ -30,11 +30,11 @@ https://i.ibb.co/LztK64V/preview-raw.png */}
         <meta name="description" content="I'm a web developer specializing in building exceptional digital experiences. " />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="http://nextjs-portfolio-drect911.vercel.app/" />
-        <meta property="og:image" content="https://i.ibb.co/F6LymfN/preview-light.png" />
-        <meta property="og:image:secure_url" content="https://i.ibb.co/F6LymfN/preview-light.png" />
+        <meta property="og:image" content="https://i.ibb.co/1dCTcWJ/ccchaos-squared-1k.png" />
+        <meta property="og:image:secure_url" content="https://i.ibb.co/1dCTcWJ/ccchaos-squared-1k.png" />
         <meta property="og:image:type" content="image/png" />
-        <meta property="og:image:width" content="400" />
-        <meta property="og:image:height" content="225" />
+        <meta property="og:image:width" content="1000" />
+        <meta property="og:image:height" content="1000" />
         <link rel="icon" href="/assets/svg/ccchaos-gradient-squared.png" />
       </Head>
 
