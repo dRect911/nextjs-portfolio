@@ -7,12 +7,19 @@ import Main from '../components/Main'
 import Navbar from '../components/Navbar'
 import Projects from '../components/Projects'
 import Skills from '../components/Skills'
-import ccchaos from '../public/ccchaos-gradient.png'
+import bg from '../public/ccchaos-gradient.png'
 
 export default function Home() {
   const [dark, setDark] = useState(false)
   return (
-    <div>
+    <div 
+      style={{
+        backgroundImage: `url(${bg.src})`,
+        backgroundAttachment: "fixed",
+        width: '100%',
+        height: '100%',
+      }}
+    >
       <Head>
         <title>Kenneth | Web Developer</title>
         {/* Open Graph properties */}

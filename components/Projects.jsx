@@ -6,6 +6,24 @@ import { Launch } from '@carbon/icons-react'
 import { FaGithub } from 'react-icons/fa'
 import circle from "../public/assets/svg/nnneon.png"
 
+//stacks images imports
+import js from "../public/assets/skills/js.png"
+import java from "../public/assets/skills/java.png"
+import csharp from "../public/assets/skills/c-sharp.png"
+import python from "../public/assets/skills/python.png"
+import react from "../public/assets/skills/react-js.png"
+import redux from "../public/assets/skills/redux-nameles.png"
+import next from "../public/assets/skills/next-js.png"
+import tailwind from "../public/assets/skills/tailwind-css.png"
+import dotnet from "../public/assets/skills/dotnet-core.png"
+import express from "../public/assets/skills/express-js.png"
+import flask from "../public/assets/skills/flask.png"
+import mongodb from "../public/assets/skills/mongodb-icon.png"
+import node from "../public/assets/skills/node-js.png"
+import postgre from "../public/assets/skills/postgres-nameless.png"
+import sqlserver from "../public/assets/skills/sql-server.png"
+
+
 const Projects = () => {
   return (
     <div id="projects" className="w-full pb-32 p-2 py-6 lg:pt-24 " >
@@ -63,19 +81,22 @@ const Projects = () => {
                         <div className="pt-4 flex flex-wrap p-2" >
                             {/* used stacks icons here */}
                             <div className="mx-2">
-                                <Image src="/../public/assets/skills/react-js.png" alt="/" width={25} height={25} className="px-2 mx-2" />
+                                <Image src={react} alt="/" width={25} height={25} className="px-2 mx-2" />
                             </div>
                             <div className="mx-2">
-                                <Image src="/../public/assets/skills/redux-nameles.png" alt="/" width={25} height={25} className="px-2 mx-2" />
+                                <Image src={redux} alt="/" width={25} height={25} className="px-2 mx-2" />
                             </div>
                             <div className="mx-2">
-                                <Image src="/../public/assets/skills/tailwind-css.png" alt="/" width={25} height={15} className="px-2 mx-2" />
+                                <Image src={tailwind} alt="/" width={25} height={15} className="px-2 mx-2" />
                             </div>
                             <div className="mx-2">
-                                <Image src="/../public/assets/skills/node-js.png" alt="/" width={25} height={25} className="px-2 mx-2" />
+                                <Image src={node} alt="/" width={25} height={25} className="px-2 mx-2" />
                             </div>
                             <div className="mx-2">
-                                <Image src="/../public/assets/skills/express-js.png" alt="/" width={25} height={25} className="px-2 mx-2" />
+                                <Image src={express} alt="/" width={25} height={25} className="px-2 mx-2" />
+                            </div>
+                            <div className="mx-2">
+                                <Image src={mongodb} alt="/" width={11.25} height={25} className="px-2 mx-2" />
                             </div>
                         </div>
                     </div>
