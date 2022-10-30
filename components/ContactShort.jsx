@@ -10,7 +10,7 @@ import ccchaos from "../public/assets/svg/ccchaos-squared-1k.png"
 
 const ContactShort = () => {
   return (
-    <div id="contact" className="w-full lg:h-screen pt-12 lg:pt-24 mb-8" >
+    <div id="contact" className="w-full lg:h-screen pt-12 lg:pt-24" >
         <div className="md:flex w-[90%] md:w-[85%] lg:w-[75%] h-auto mx-auto  p-4 md:p-6 rounded-2xl border border-neutral-600 shadow-md bg-neutral-50/25 dark:bg-neutral-900/25 backdrop-blur-sm transition-all">
             <div className="" >
                 <Image src={ccchaos} width={1000} height={1000} alt="/" className="" />

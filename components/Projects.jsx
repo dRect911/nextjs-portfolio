@@ -24,6 +24,9 @@ import postgre from "../public/assets/skills/postgres-nameless.png"
 import sqlserver from "../public/assets/skills/sql-server.png"
 
 
+//projects screens
+import memories from '../public/assets/projects/memories-dummy-screen.png'
+
 const Projects = () => {
   return (
     <div id="projects" className="w-full pb-32 p-2 py-6 lg:pt-24 " >
@@ -54,7 +57,7 @@ const Projects = () => {
 
                 {/* Memories App */}
                 <div className="md:h-[480px] lg:w-[40%]  md:mx-4 lg:mx-8 my-4 border border-neutral-600  backdrop-blur-sm flex flex-col rounded-2xl relative drop-shadow-md transition-all ">
-                    <div className="rounded-t-2xl object-cover border-b border-neutral-600 hover:backdrop-blur-sm h-[280px] mern-stack-memories "  >
+                    <div className="rounded-t-2xl object-cover border-b border-neutral-600 hover:backdrop-blur-sm h-[280px] bg-cover " style={{backgroundImage: `url(${memories.src})`}} >
                         {/* <Image src="/../public/assets/projects/memories-raw-screen.png" alt="/" width={1879} height={936} className=" rounded-t-2xl " /> */}
                     </div>
 
@@ -103,7 +106,6 @@ const Projects = () => {
                     
                 </div>
 
-                
 
                 {/* more soon box */}
                 <div className="h-[300px] md:h-[480px] lg:w-[40%]  md:mx-4 lg:mx-8 my-4 px-10 py-6 border border-dashed border-neutral-600 backdrop-blur-sm flex items-center rounded-2xl relative drop-shadow-md transition-all ">
