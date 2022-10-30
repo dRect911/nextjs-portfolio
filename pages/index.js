@@ -27,7 +27,7 @@ export default function Home() {
 https://i.ibb.co/LztK64V/preview-raw.png */}
         <meta property="og:site_name" content="Kenneth PRINCE AGBODJAN" />
         <meta property="og:title" content="Kenneth | Web Developer" />
-        <meta name="description" content="I'm a web developer specializing in building exceptional digital experiences. " />
+        <meta property="og:description" content="I'm a web developer specializing in building exceptional digital experiences. " />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="http://nextjs-portfolio-drect911.vercel.app/" />
         <meta property="og:image" content="https://i.ibb.co/1dCTcWJ/ccchaos-squared-1k.png" />
