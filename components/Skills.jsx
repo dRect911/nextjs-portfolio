@@ -19,6 +19,8 @@ import mongodb from "../public/assets/skills/mongodb-icon.png"
 import node from "../public/assets/skills/node-js.png"
 import postgre from "../public/assets/skills/postgres-nameless.png"
 import sqlserver from "../public/assets/skills/sql-server.png"
+import next13 from "../public/assets/skills/next-13.png"
+import sanity from "../public/assets/skills/sanity.png"
 
 
 const Skills = () => {
@@ -97,7 +99,7 @@ const Skills = () => {
                 <div className="md:w-[20%] h-[25vh] p-6 flex flex-col jusitfy-center items-center m-4 border border-neutral-600 shadow-md bg-neutral-50/50 dark:bg-neutral-900/50 backdrop-blur-sm rounded-2xl " >
                     <p className="text-2xl md:text-3xl  lg:text-4xl font-medium py-2 dark:text-neutral-300" >Next</p>
                     <div className=" flex justify-center  " >
-                        <Image src={next} alt="/" width={100} height={100} className="" />
+                        <Image src={next13} alt="/" width={100} height={100} className="" />
                     </div>
                 </div>
                 <div className="md:w-[20%] h-[25vh] p-6 flex flex-col jusitfy-center items-center m-4 border border-neutral-600 shadow-md bg-neutral-50/50 dark:bg-neutral-900/50 backdrop-blur-sm rounded-2xl " >
@@ -124,6 +126,12 @@ const Skills = () => {
                     <p className="text-2xl md:text-3xl lg:text-4xl font-medium py-2 dark:text-neutral-300" >Express</p>
                     <div className=" flex justify-center  " >
                         <Image src={express} alt="/" width={100} height={100} className="" />
+                    </div>
+                </div>
+                <div className="md:w-[20%] h-[25vh] p-6 flex flex-col jusitfy-center items-center m-4 border border-neutral-600 shadow-md bg-neutral-50/50 dark:bg-neutral-900/50 backdrop-blur-sm rounded-2xl " >
+                    <p className="text-2xl md:text-3xl lg:text-4xl font-medium py-2 dark:text-neutral-300" >Sanity</p>
+                    <div className=" flex justify-center  " >
+                        <Image src={sanity} alt="/" width={100} height={100} className="" />
                     </div>
                 </div>
                 <div className="md:w-[20%] h-[25vh] p-6 flex flex-col jusitfy-center items-center m-4 border border-neutral-600 shadow-md bg-neutral-50/50 dark:bg-neutral-900/50 backdrop-blur-sm rounded-2xl " >
